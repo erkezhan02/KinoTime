@@ -1,0 +1,270 @@
+/* Общие стили для страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Стили для фона */
+body {
+    background-image: url('https://i.pinimg.com/originals/e2/3f/a6/e23fa65dcedeb00cc5f9ac4ca015699d.jpg'); /* Ссылка на ваше изображение */
+    background-size: cover; /* Изображение покрывает всю страницу */
+    background-position: center; /* Центрируем изображение */
+    background-attachment: fixed; /* Фон фиксирован */
+    height: 100vh; /* Высота body на всю страницу */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для навигации */
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #555;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+}
+
+/* Стили для главного контента */
+.main-content {
+    text-align: center;
+    color: white;
+    margin-top: 350px; /* Отступ сверху для центрального текста */
+    margin-bottom: 450px;
+}
+
+hr {
+    width: 25%; /* Ширина линии */
+    margin: 10px auto; /* Отступы сверху и снизу, центрирование */
+    border: 2px solid white; /* Цвет и толщина линии */
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.section-heading {
+    text-align: left;
+    margin: 30px;
+    color: #fff;
+}
+
+/* Featured Articles */
+.featured-articles .featured-article {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.featured-articles .featured-article:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.featured-articles img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.article-title {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.article-summary {
+    color: #666;
+}
+
+.read-more {
+    color: #76a5af;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #ffcccb;
+}
+
+/* Movie Cards */
+.highlighted-movies .movie-card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.highlighted-movies .movie-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.movie-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.movie-description {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.details-link {
+    color: #76a5af;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.details-link:hover {
+    color: #ffcccb;
+    text-decoration: underline;
+}
+
+/* Subscription Form */
+.subscription-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.subscription-form .submit-btn {
+    background-color: #76a5af;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-form .submit-btn:hover {
+    background-color: #ffcccb;
+}
+
+/* Movie and Actor Gallery */
+.movie-gallery, .actors-gallery, .show-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.movie-card, .actor-card, .show-card {
+    flex: 1 1 calc(20% - 15px);
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-sizing: border-box; /* Учитывает padding и border в расчет ширины элемента */
+}
+
+.movie-card img, .actor-card img, .show-card img {
+    width: 100%;
+    height: 300px; /* Установите высоту по вашему выбору */
+    object-fit: cover; /* Обрезает изображение, чтобы сохранить пропорции и заполнить контейнер */
+    border-radius: 5px;
+}
+
+.movie-title, .actor-name, .show-title {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Цитаты */
+.quote {
+    font-style: italic;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 600px;
+    border-left: 3px solid #ccc;
+    color:#fff;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .movie-card, .actor-card, .show-card {
+        flex: 1 1 calc(45% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card, .actor-card, .show-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Стили для футера */
+footer {
+    background-color: #eff4fd;
+    color: #111;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
